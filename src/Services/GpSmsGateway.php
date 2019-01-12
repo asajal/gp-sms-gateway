@@ -102,7 +102,6 @@ class GpSmsGateway
         ]);
         $response = $client->request('GET',$this->fullApiUrl,['query'=>$queries]);
         $this->apiResponse = ['statusCode'=>$response->getStatusCode(),'reasonPhrase'=>$response->getReasonPhrase(),'serverResponse'=>$response->getBody()->getContents()];
-        dd($this);
         return $this;
     }
 
