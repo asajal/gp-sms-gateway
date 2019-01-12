@@ -1,0 +1,32 @@
+{
+    "name": "arifsajal/gp-sms-gateway",
+    "description": "GrameenPhone Sms Gateway",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ariful Islam",
+            "email": "sajalarifulislam@gmail.com",
+            "homepage": "https://github.com/arifsajal70"
+        }
+    ],
+    "homepage": "https://github.com/arifsajal70/gp-sms-gateway",
+    "keywords": ["Laravel", "GpSmsGateway"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "autoload": {
+        "psr-4": {
+            "arifsajal\\GpSmsGateway\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "arifsajal\\GpSmsGateway\\GPServiceProvider"
+            ],
+            "aliases": {
+                "GP": "arifsajal\\GpSmsGateway\\Facades\\GP"
+            }
+        }
+    }
+}
