@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "arifsajal\\GpSmsGateway\\GPServiceProvider"
+                "arifsajal\\GpSmsGateway\\Providers\\GPServiceProvider"
             ],
             "aliases": {
                 "GP": "arifsajal\\GpSmsGateway\\Facades\\GP"
